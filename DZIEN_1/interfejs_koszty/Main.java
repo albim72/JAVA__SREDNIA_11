@@ -9,6 +9,20 @@ public class Main {
         Pojazd p = new Pojazd();
         System.out.printf("spalanie [l/100km]: %.3f\n",p.spalanie100(odl,litry));
         System.out.printf("koszty przejazdu na trasie %.2f km: %.2f zł\n",
-                odl,litry,cn);
+                odl,p.kosztyPrzejazdu(odl,litry,cn));
+        System.out.println(p.info("wystawa ABC"));
+
+        IComment pz = new Pojazd();
+//        System.out.printf("spalanie [l/100km]: %.3f\n",pz.spalanie100(odl,litry));
+//        System.out.printf("koszty przejazdu na trasie %.2f km: %.2f zł\n",
+//                odl,p.kosztyPrzejazdu(odl,litry,cn));
+        System.out.println(pz.info("wystawa ABC"));
+
+        IPojazd pk = new Pojazd();
+        System.out.printf("spalanie [l/100km]: %.3f\n",pk.spalanie100(odl,litry));
+        System.out.printf("koszty przejazdu na trasie %.2f km: %.2f zł\n",
+                odl,pk.kosztyPrzejazdu(odl,litry,cn));
+//        System.out.println(pk.info("wystawa ABC"));
+
     }
 }
