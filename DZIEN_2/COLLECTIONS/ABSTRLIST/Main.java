@@ -38,10 +38,17 @@ public class Main {
             System.out.println(list.get(i));
         }
 
-        list.add(56);
-        list.add(77);
-        list.add(12);
-        list.add(83);
-        list.add(25);
+//        list.add(56);
+//        list.add(77);
+//        list.add(12);
+//        list.add(83);
+//        list.add(25);
+
+        System.out.println("Wyświetlenie wszytkich elementów:\n ");
+        for (Integer item: list){
+            System.out.println(item);
+        }
+
+
     }
 }
