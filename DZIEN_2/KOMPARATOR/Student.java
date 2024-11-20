@@ -10,6 +10,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return String.format("nr albumu: %s, imię: %s, adres: %s",this.rollno,this.name,this.address)
+        return String.format("nr albumu: %s, imię: %s, adres: %s",this.rollno,this.name,this.address);
     }
 }
